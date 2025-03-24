@@ -24,6 +24,7 @@
     dunst
     libnotify
     polkit_gnome
+    obsidian
   ];
 
   # Hyprland configuration

@@ -58,6 +58,7 @@
     vesktop
     tdesktop # Telegram
     signal-desktop
+    obsidian # Note-taking app
     steam
     steam-run
     wine

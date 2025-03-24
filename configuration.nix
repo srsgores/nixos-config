@@ -3,7 +3,7 @@
 {
   imports = [
     ./hardware-configurations/default.nix
-    ./modules/pipewire.nix
+    ./modules/audio.nix
   ];
 
   # Enable nix flakes
@@ -59,6 +59,9 @@
     tdesktop # Telegram
     signal-desktop
     obsidian # Note-taking app
+    # Audio tools
+    qpwgraph # PipeWire graph manager
+    ffado-mixer # Mixer for FireWire audio devices
     steam
     steam-run
     wine

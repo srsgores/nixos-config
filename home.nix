@@ -7,7 +7,6 @@
     ./modules/alacritty.nix
     ./modules/fish.nix
     ./modules/mpv.nix
-    ./modules/pipewire.nix
   ];
 
   home.packages = with pkgs; [
@@ -25,6 +24,11 @@
     libnotify
     polkit_gnome
     obsidian
+    # Audio tools
+    jack2
+    cadence
+    carla
+    ardour
   ];
 
   # Hyprland configuration

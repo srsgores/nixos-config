@@ -9,7 +9,7 @@ This repository contains my personal NixOS configuration using Nix Flakes.
 - Fish shell for an enhanced terminal experience
 - Full media setup with MPV and Plex
 - Gaming with Steam, Wine, and Proton
-- Optimized audio with PipeWire
+- Optimized audio with PipeWire and real-time performance
 - Syncthing for file synchronization
 
 ## Installation
@@ -19,24 +19,21 @@ This repository contains my personal NixOS configuration using Nix Flakes.
 1. Install NixOS using the standard installation method
 2. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/nixos-config.git ~/.config/nixos
+   git clone https://github.com/your-username/nixos-config.git ~/.config/nixos-config
    ```
-3. Run the installation script:
+3. Apply the configuration:
    ```bash
-   cd ~/.config/nixos
-   chmod +x scripts/install.sh
-   ./scripts/install.sh
+   cd ~/.config/nixos-config
+   sudo nixos-rebuild switch --flake .#nixos
    ```
 
-### Backing Up Your Current Configuration
+### Customizing Your Configuration
 
-If you want to update this repository with your current configuration:
+This configuration follows the declarative NixOS approach:
 
-```bash
-cd ~/.config/nixos
-chmod +x scripts/backup-configs.sh
-./scripts/backup-configs.sh
-```
+1. Modify files in this repository
+2. Rebuild your system with `sudo nixos-rebuild switch --flake .#nixos`
+3. Commit your changes to version control
 
 ## Customization
 
@@ -52,7 +49,6 @@ chmod +x scripts/backup-configs.sh
 - `home.nix`: Home-manager configuration for user environment
 - `modules/`: Configuration modules for specific applications
 - `dotfiles/`: Configuration files for various applications
-- `scripts/`: Utility scripts for installation and maintenance
 
 ## Credits
 

@@ -11,6 +11,7 @@ mkdir -p "$DOTFILES_DIR/fish"
 mkdir -p "$DOTFILES_DIR/mpv/configs"
 mkdir -p "$DOTFILES_DIR/pipewire"
 mkdir -p "$DOTFILES_DIR/hypr"
+mkdir -p "$DOTFILES_DIR/wpaperd"
 
 # Backup CopyQ configuration
 if [ -d "$HOME/.config/copyq" ]; then
@@ -59,6 +60,13 @@ if [ -d "$HOME/.config/hypr" ]; then
     mkdir -p "$DOTFILES_DIR/hypr/scripts"
     cp -r "$HOME/.config/hypr/scripts/" "$DOTFILES_DIR/hypr/"
   fi
+fi
+
+# Backup Wpaperd configuration
+if [ -d "$HOME/.config/wpaperd" ]; then
+  echo "Backing up Wpaperd configuration..."
+  cp "$HOME/.config/wpaperd/config.toml" "$DOTFILES_DIR/wpaperd/" 2>/dev/null || true
+  cp "$HOME/.config/wpaperd/output.conf" "$DOTFILES_DIR/wpaperd/" 2>/dev/null || true
 fi
 
 echo "Configuration backup complete!" 

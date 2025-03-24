@@ -56,11 +56,8 @@
   xdg.configFile."copyq/themes".source = ./dotfiles/copyq/themes;
 
   # Wpaperd (wallpaper)
-  xdg.configFile."wpaperd/wallpaper.toml".text = ''
-    [default]
-    path = "~/Pictures/Wallpapers"
-    duration = "30m"
-  '';
+  xdg.configFile."wpaperd/config.toml".source = ./dotfiles/wpaperd/config.toml;
+  xdg.configFile."wpaperd/output.conf".source = ./dotfiles/wpaperd/output.conf;
   
   # Syncthing service
   services.syncthing.enable = true;

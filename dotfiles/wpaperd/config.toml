@@ -1,0 +1,5 @@
+[default]
+path = "/home/seang/Pictures/wallpapers/screensavers"
+duration = "15m"
+sorting = "random"
+mode = "center"

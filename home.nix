@@ -28,7 +28,10 @@
 		# Audio tools
 		jack2
 		cadence
-		carla
+		yabridge
+		yabridge-host
+		reaper
+		reaper-sws-plugin
 	];
 
 	# Hyprland configuration

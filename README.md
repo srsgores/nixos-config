@@ -1,16 +1,16 @@
 # NixOS Configuration
 
-This repository contains my personal NixOS configuration using Nix Flakes.
+This repository contains my personal NixOS configuration using [Nix Flakes](https://nixos.wiki/wiki/Flakes).
 
 ## Features
 
-- Wayland with Hyprland as the window manager
-- Firefox with Betterfox optimization
-- Fish shell for an enhanced terminal experience
-- Full media setup with MPV and Plex
-- Gaming with Steam, Wine, and Proton
-- Optimized audio with PipeWire and real-time performance
-- Syncthing for file synchronization
+- Wayland with [Hyprland](https://github.com/hyprwm/Hyprland) as the window manager
+- Firefox with [Betterfox](https://github.com/yokoffing/Betterfox) optimization
+- [Fish shell](https://github.com/fish-shell/fish-shell) for an enhanced terminal experience
+- Full media setup with [MPV](https://github.com/mpv-player/mpv) and [Plex](https://github.com/plexinc/pms-docker)
+- Gaming with [Steam](https://store.steampowered.com/), [Wine](https://github.com/wine-mirror/wine), and [Proton](https://github.com/ValveSoftware/Proton)
+- Optimized audio with [PipeWire](https://github.com/PipeWire/pipewire) and real-time performance
+- [Syncthing](https://github.com/syncthing/syncthing) for file synchronization
 
 ## Installation
 
@@ -18,14 +18,14 @@ This repository contains my personal NixOS configuration using Nix Flakes.
 
 1. Install NixOS using the standard installation method
 2. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/nixos-config.git ~/.config/nixos-config
-   ```
+	```bash
+	git clone https://github.com/your-username/nixos-config.git ~/.config/nixos-config
+	```
 3. Apply the configuration:
-   ```bash
-   cd ~/.config/nixos-config
-   sudo nixos-rebuild switch --flake .#nixos
-   ```
+	```bash
+	cd ~/.config/nixos-config
+	sudo nixos-rebuild switch --flake .#nixos
+	```
 
 ### Customizing Your Configuration
 

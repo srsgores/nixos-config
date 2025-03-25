@@ -33,7 +33,7 @@
       "context.properties" = {
         "default.clock.rate" = 48000;
         "default.clock.allowed-rates" = [ 44100 48000 88200 96000 ];
-        "default.clock.quantum" = 256;
+        "default.clock.quantum" = 128;
         "default.clock.min-quantum" = 32;
         "default.clock.max-quantum" = 8192;
       };
@@ -44,7 +44,7 @@
       "jack.properties" = {
         "jack.default.rate" = 48000;
         "jack.default.channels" = 2;
-        "jack.default.quantum" = 256;
+        "jack.default.quantum" = 128;
         "jack.allow-rate-changes" = true;
       };
     };

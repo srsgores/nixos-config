@@ -1,0 +1,16 @@
+{
+  "tabWidth": 4,
+  "useTabs": true,
+  "printWidth": 1000,
+  "singleQuote": false,
+  "trailingComma": "none",
+  "bracketSpacing": false,
+  "overrides": [
+    {
+      "files": "*.toml",
+      "options": {
+        "parser": "toml"
+      }
+    }
+  ]
+} 

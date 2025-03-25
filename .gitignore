@@ -14,3 +14,15 @@ result-*
 # OS specific files
 .DS_Store
 Thumbs.db 
+
+# Node modules
+node_modules
+
+# Nix store
+.nix-store
+
+# Nix-darwin
+.nix-darwin
+
+# Nix-darwin-modules
+.nix-darwin-modules

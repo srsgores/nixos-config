@@ -1,0 +1,18 @@
+{
+  "name": "nixos-config",
+  "version": "1.0.0",
+  "description": "NixOS configuration with formatting",
+  "private": true,
+  "scripts": {
+    "format:prettier": "prettier --write \"**/*.{yml,yaml,toml}\" --plugin=prettier-plugin-toml",
+    "check-format:prettier": "prettier --check \"**/*.{yml,yaml,toml}\" --plugin=prettier-plugin-toml",
+    "format:nix": "find . -name \"*.nix\" -type f -exec nixfmt {} \\;",
+    "format:conf": "./formatters/format-conf.sh",
+    "format:sh": "./formatters/format-sh.sh",
+    "format": "npm run format:prettier && npm run format:nix && npm run format:conf && npm run format:sh"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-toml": "^1.0.0"
+  }
+} 

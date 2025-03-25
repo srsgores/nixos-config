@@ -21,18 +21,18 @@ else
 		cat "$file" |
 			expand -t 4 |
 			# Fix variable assignments to have consistent spacing
-			sed -E 's/([A-Za-z0-9_]+)[ ]*=[ ]*/\1=/g' |
+			sed -E "s/([A-Za-z0-9_]+)[ ]*=[ ]*/\1=/g" |
 			# Remove trailing whitespace
-			sed 's/[ \t]*$//g' > "$tmp_file"
+			sed "s/[ \t]*$//g" > "$tmp_file"
 
-		# Since shell script formatting is complex, we'll recommend using shfmt
-		# for more advanced formatting. For now, we'll just ensure consistent
+		# Since shell script formatting is complex, we"ll recommend using shfmt
+		# for more advanced formatting. For now, we"ll just ensure consistent
 		# spacing and tabs for indentation.
 		cat "$tmp_file" |
 			# Convert leading spaces to tabs (4 spaces=1 tab)
 			unexpand -t 4 --first-only |
 			# Add final newline
-			sed -e '$a\' > "${tmp_file}.2"
+			sed -e "$a\" > "${tmp_file}.2"
 
 		# Replace the original file with the formatted one
 		mv "${tmp_file}.2" "$file"

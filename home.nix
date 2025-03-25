@@ -25,6 +25,9 @@
 		libnotify
 		polkit_gnome
 		obsidian
+		# Screen sharing and recording
+		wf-recorder
+		obs-studio
 		# Audio tools
 		jack2
 		cadence
